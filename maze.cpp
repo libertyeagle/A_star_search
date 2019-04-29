@@ -2,7 +2,7 @@
 // Created by 吴永基 on 2019/4/26.
 //
 
-#include "maze.h"
+#include "maze.hpp"
 
 Maze::Maze(ifstream &ifs) : rows(MAZE_ROWS), cols(MAZE_COLS) {
     int status;
