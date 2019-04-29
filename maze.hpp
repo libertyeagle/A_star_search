@@ -1,5 +1,5 @@
 //
-// Created by 吴永基 on 2019/4/26.
+// Created by libertyeagle on 2019/4/26.
 //
 
 #ifndef MAZE_MAZE_H
@@ -72,6 +72,8 @@ public:
     string construct_path();
 
     chrono::microseconds search_duration;
+
+    int num_nodes;
 
 protected:
     virtual void maze_search() = 0;

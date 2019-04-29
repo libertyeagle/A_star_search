@@ -1,5 +1,5 @@
 //
-// Created by 吴永基 on 2019/4/28.
+// Created by libertyeagle on 2019/4/28.
 //
 
 #include "maze.hpp"
@@ -33,6 +33,7 @@ void IDAStarSearch::maze_search() {
             auto p = frontier.front();
             frontier.pop_front();
             if (visited_points.find(make_pair(p->x, p->y)) != visited_points.end()) continue;
+            num_nodes += 1;
             if (p->x == target.first && p->y == target.second) {
                 final = p;
                 visited.push_back(p);

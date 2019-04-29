@@ -1,10 +1,10 @@
 //
-// Created by 吴永基 on 2019/4/28.
+// Created by libertyeagle on 2019/4/28.
 //
 #include "maze.hpp"
 
 Search::Search(ifstream &ifs, const Point &maze_entry, const Point &maze_target) : maze(ifs), entry(maze_entry),
-                                                                                   target(maze_target) {}
+                                                                                   target(maze_target), num_nodes(0) {}
 
 string Search::construct_path() {
     string path;

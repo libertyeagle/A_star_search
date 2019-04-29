@@ -3,4 +3,5 @@ project(maze)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(main main.cpp maze.hpp maze.cpp a_star.cpp id_a_star.cpp search.cpp)
+add_executable(a_star main_a_star.cpp maze.hpp maze.cpp a_star.cpp id_a_star.cpp search.cpp)
+add_executable(ida_star main_id_a_star.cpp maze.hpp maze.cpp a_star.cpp id_a_star.cpp search.cpp)
